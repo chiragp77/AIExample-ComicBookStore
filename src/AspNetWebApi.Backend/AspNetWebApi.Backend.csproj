@@ -8,8 +8,8 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7" />
 		<PackageReference Include="Azure.AI.OpenAI" Version="2.9.0-beta.1" />
-		<PackageReference Include="Microsoft.Agents.AI.Hosting.AGUI.AspNetCore" Version="1.4.0-preview.260505.1" />
-		<PackageReference Include="Microsoft.Agents.AI.OpenAI" Version="1.4.0" />
+		<PackageReference Include="Microsoft.Agents.AI.Hosting.AGUI.AspNetCore" Version="1.5.0-preview.260507.1" />
+		<PackageReference Include="Microsoft.Agents.AI.OpenAI" Version="1.5.0" />
 	</ItemGroup>
 
 	<ItemGroup>
