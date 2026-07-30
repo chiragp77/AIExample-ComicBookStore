@@ -12,7 +12,7 @@ builder.Services.AddOpenApi();
 
 BackendConfiguration backendConfiguration = builder.Configuration.GetBackendConfiguration();
 
-builder.Services.AddAGUI();
+builder.Services.AddAGUIServer();
 
 builder.Services.AddCors(options =>
 {
@@ -34,8 +34,8 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-app.MapAGUI("/comic-book-guy", AgentBuilder.GetComicBookGuy(backendConfiguration));
-app.MapAGUI("/assistant", AgentBuilder.GetAssistant(backendConfiguration));
+app.MapAGUIServer("/comic-book-guy", AgentBuilder.GetComicBookGuy(backendConfiguration));
+app.MapAGUIServer("/assistant", AgentBuilder.GetAssistant(backendConfiguration));
 
 app.UseCors("Cors");
 
